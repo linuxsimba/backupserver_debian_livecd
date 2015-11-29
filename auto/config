@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+lb config  noauto\
+  -b iso-hybrid \
+  --distribution "jessie" \
+	"${@}"
