@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mkdir /home/backup
+chown 1000:1000
+echo "/dev/md0   /home/backup ext4   defaults 0 2" >> /etc/fstab
+mount /dev/md0
+exit 0
