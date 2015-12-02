@@ -4,5 +4,6 @@ set -e
 
 lb config  noauto\
   -b iso-hybrid \
+  --bootappend-live "boot=live config hostname=backup-host username=enable" \
   --distribution "jessie" \
 	"${@}"
